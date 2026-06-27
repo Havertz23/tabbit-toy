@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  tabbit-toy:
+    build: .
+    container_name: tabbit-toy
+    ports:
+      - "8787:8787"
+    env_file:
+      - .env
+    restart: always
